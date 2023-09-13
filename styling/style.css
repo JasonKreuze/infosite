@@ -10,3 +10,21 @@ html{
 header{
     background-color: #2add5d;
 }
+
+.header{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.credits{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.container{
+    background-color: #69197c;
+    padding: 10px 10px;
+}
