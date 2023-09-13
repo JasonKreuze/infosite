@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: Fellix,"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+header{
+    background-color: #2add5d;
+}
