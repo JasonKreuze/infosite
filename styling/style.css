@@ -1,14 +1,35 @@
+@font-face {
+    font-family: "Curio";
+    src: url(Fellix-Regular.woff2);
+}
+
+@font-face {
+    font-family: "CurioBold";
+    src: url(Fellix-Bold.woff2);
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
 html{
-    font-family: Fellix,"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "CurioBold";
+}
+
+
+
+html{
+    font-family: "CurioBold";
 }
 
 header{
-    background-color: #2add5d;
+    background-color: #2add5d; 
+    font-size: x-large;
+}
+
+.logo{
+    width: 200px;
 }
 
 .header{
@@ -22,9 +43,792 @@ header{
     display: flex;
     flex-direction: column;
     justify-items: center;
+    border: #69197c 4px solid;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #69197c;
+    color: #2add5d;
+    font-family: "CurioBold";
+}
+
+.coloroverflow{
+    background-image: linear-gradient(#2add5d, #69197c);
+    padding: 10px;
+  }
+
+.coloroverflowreverse{
+    background-image: linear-gradient(#69197c, #2add5d);
+    padding: 10px;
+}
+
+footer{
+    background-color: #2add5d;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    font-size: x-large;
+}
+
+main{
+    background-color: #69197c;
 }
 
 .container{
-    background-color: #69197c;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     padding: 10px 10px;
+    width: 60%;
+    margin: 0 auto;
+    color: #2add5d;
+}
+
+.img{
+    border: #2add5d 5px solid;
+    border-radius: 20px;
+    width: 600px;
+    margin: 5px;
+}
+
+p{
+    font-size: x-large;
+}
+
+.vakken p{
+    font-size: large;
+    margin: 10px;
+}
+
+.vakken p span{
+    text-decoration: underline;
+}
+
+.tussenruimte{
+    padding: 200px 0px;
+}
+
+.vakken, .blokken{
+    display: flex;
+}
+
+.blokken p{
+    margin-left: 10px;
+}
+
+.blokken img{
+    width: 700px;
+
+}
+
+.rooster img{
+    width: 98%;
+    margin: 20px 0px;
+}
+
+.smoelenboek{
+    margin: 10px 0px;
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-flow: dense;
+}
+
+.docent{
+    border: #2add5d 5px solid;
+    padding: 10px;
+    margin: 10px ;
+    border-radius: 20px;
+    background-color: #2add5d;
+    color: #69197c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform .2s;
+}
+
+.docent img{
+    border: #69197c 5px solid;
+    border-radius: 20px;
+}
+
+.docent:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1550px) {
+    header{
+        background-color: #2add5d; 
+        font-size: x-large;
+    }
+
+    .logo{
+        width: 200px;
+    }
+    
+    .header{
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .credits{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        border: #69197c 4px solid;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #69197c;
+        color: #2add5d;
+        font-family: "CurioBold";
+    }
+    
+    .coloroverflow{
+        background-image: linear-gradient(#2add5d, #69197c);
+        padding: 10px;
+      }
+    
+    .coloroverflowreverse{
+        background-image: linear-gradient(#69197c, #2add5d);
+        padding: 10px;
+    }
+    
+    footer{
+        background-color: #2add5d;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px;
+        font-size: x-large;
+    }
+    
+    main{
+        background-color: #69197c;
+    }
+    
+    .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 10px 10px;
+        width: 60%;
+        margin: 0 auto;
+        color: #2add5d;
+    }
+    
+    .img{
+        border: #2add5d 5px solid;
+        border-radius: 20px;
+        width: 900px;
+        margin: 5px;
+    }
+    
+    p{
+        font-size: x-large;
+    }
+    
+    .vakken p{
+        font-size: large;
+        margin: 10px;
+    }
+    
+    .vakken p span{
+        text-decoration: underline;
+    }
+    
+    .vakken, .blokken{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .blokken p{
+        margin-left: 10px;
+    }
+    
+    .blokken img{
+        width: 900px;
+    
+    }
+    
+    .rooster img{
+        width: 98%;
+        margin: 20px 0px;
+    }
+    
+    .smoelenboek{
+        margin: 10px 0px;
+        display: grid;
+        grid-gap: 1%;
+        grid-template-columns: 50% 50%;
+        grid-auto-flow: dense;
+        margin-bottom: 40px;
+    }
+    
+    .docent{
+        margin: 10px;
+        border: #2add5d 5px solid;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #2add5d;
+        color: #69197c;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform .2s;
+    }
+    
+    .docent img{
+        border: #69197c 5px solid;
+        border-radius: 20px;
+    }
+    
+    .docent:hover{
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 1138px) {
+    header{
+        background-color: #2add5d; 
+        font-size: x-large;
+    }
+
+    .logo{
+        width: 200px;
+    }
+    
+    .header{
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .credits{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        border: #69197c 4px solid;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #69197c;
+        color: #2add5d;
+        font-family: "CurioBold";
+    }
+    
+    .coloroverflow{
+        background-image: linear-gradient(#2add5d, #69197c);
+        padding: 10px;
+      }
+    
+    .coloroverflowreverse{
+        background-image: linear-gradient(#69197c, #2add5d);
+        padding: 10px;
+    }
+    
+    footer{
+        background-color: #2add5d;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px;
+        font-size: x-large;
+    }
+    
+    main{
+        background-color: #69197c;
+    }
+    
+    .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 10px 10px;
+        width: 60%;
+        margin: 0 auto;
+        color: #2add5d;
+    }
+    
+    .img{
+        border: #2add5d 5px solid;
+        border-radius: 20px;
+        width: 600px;
+        margin: 5px;
+    }
+    
+    p{
+        font-size: x-large;
+    }
+    
+    .vakken p{
+        font-size: large;
+        margin: 10px;
+    }
+    
+    .vakken p span{
+        text-decoration: underline;
+    }
+    
+    .vakken, .blokken{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .blokken p{
+        margin-left: 10px;
+    }
+    
+    .blokken img{
+        width: 700px;
+    
+    }
+    
+    .rooster img{
+        width: 98%;
+        margin: 20px 0px;
+    }
+    
+    .smoelenboek{
+        margin: 10px 0px;
+        display: grid;
+        grid-gap: 1%;
+        grid-template-columns: 50% 50%;
+        grid-auto-flow: dense;
+        margin-bottom: 40px;
+    }
+    
+    .docent{
+        margin: 10px;
+        border: #2add5d 5px solid;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #2add5d;
+        color: #69197c;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform .2s;
+    }
+    
+    .docent img{
+        border: #69197c 5px solid;
+        border-radius: 20px;
+    }
+    
+    .docent:hover{
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    header{
+        background-color: #2add5d; 
+        font-size: x-large;
+    }
+
+    .credits p{
+        font-size: medium;
+    }
+    
+    .logo{
+        width: 100px;
+    }
+    
+    .header{
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .credits{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        border: #69197c 4px solid;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #69197c;
+        color: #2add5d;
+        font-family: "CurioBold";
+    }
+    
+    .coloroverflow{
+        background-image: linear-gradient(#2add5d, #69197c);
+        padding: 10px;
+      }
+    
+    .coloroverflowreverse{
+        background-image: linear-gradient(#69197c, #2add5d);
+        padding: 10px;
+    }
+    
+    footer{
+        background-color: #2add5d;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px;
+        font-size: x-large;
+    }
+    
+    main{
+        background-color: #69197c;
+    }
+    
+    .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 10px 10px;
+        width: 60%;
+        margin: 0 auto;
+        color: #2add5d;
+    }
+    
+    .img{
+        border: #2add5d 5px solid;
+        border-radius: 20px;
+        width: 400px; /* 600 */
+        margin: 5px;
+    }
+    
+    p{
+        font-size: x-large;
+    }
+    
+    .vakken p{
+        font-size: large;
+        margin: 10px;
+    }
+    
+    .vakken p span{
+        text-decoration: underline;
+    }
+    
+    .vakken, .blokken{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .blokken p{
+        margin-left: 10px;
+    }
+    
+    .blokken img{
+        width: 500px; /*700 */
+    
+    }
+    
+    .rooster img{
+        width: 98%;
+        margin: 20px 0px;
+    }
+    
+    .smoelenboek{
+        margin: 10px 0px;
+        display: grid;
+        grid-gap: 1%;
+        grid-template-columns: 50% 50%;
+        grid-auto-flow: dense;
+        margin-bottom: 40px;
+    }
+    
+    .docent{
+        margin: 10px;
+        border: #2add5d 5px solid;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #2add5d;
+        color: #69197c;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform .2s;
+    }
+    
+    .docent img{
+        border: #69197c 5px solid;
+        border-radius: 20px;
+    }
+    
+    .docent:hover{
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header{
+        background-color: #2add5d; 
+        font-size: x-large;
+    }
+
+    .credits p{
+        font-size: medium;
+    }
+    
+    .logo{
+        width: 100px;
+    }
+    
+    .header{
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .credits{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        border: #69197c 4px solid;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #69197c;
+        color: #2add5d;
+        font-family: "CurioBold";
+    }
+    
+    .coloroverflow{
+        background-image: linear-gradient(#2add5d, #69197c);
+        padding: 10px;
+      }
+    
+    .coloroverflowreverse{
+        background-image: linear-gradient(#69197c, #2add5d);
+        padding: 10px;
+    }
+    
+    footer{
+        background-color: #2add5d;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px;
+        font-size: x-large;
+    }
+    
+    main{
+        background-color: #69197c;
+    }
+    
+    .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 10px 10px;
+        width: 60%;
+        margin: 0 auto;
+        color: #2add5d;
+    }
+    
+    .img{
+        border: #2add5d 5px solid;
+        border-radius: 20px;
+        width: 400px; /* 600 */
+        margin: 5px;
+    }
+    
+    p{
+        font-size: x-large;
+    }
+    
+    .vakken p{
+        font-size: large;
+        margin: 10px;
+    }
+    
+    .vakken p span{
+        text-decoration: underline;
+    }
+    
+    .vakken, .blokken{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .blokken p{
+        margin-left: 10px;
+    }
+    
+    .blokken img{
+        width: 400px; /*700 */
+    
+    }
+    
+    .rooster img{
+        width: 98%;
+        margin: 20px 0px;
+    }
+    
+    .smoelenboek{
+        margin: 10px 0px;
+        display: grid;
+        grid-gap: 1%;
+        grid-template-columns: 100%;
+        grid-auto-flow: dense;
+        margin-bottom: 150px;
+    }
+    
+    .docent{
+        margin: 10px;
+        border: #2add5d 5px solid;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #2add5d;
+        color: #69197c;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform .2s;
+    }
+    
+    .docent img{
+        border: #69197c 5px solid;
+        border-radius: 20px;
+    }
+    
+    .docent:hover{
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 420px) {
+    header{
+        background-color: #2add5d; 
+        font-size: x-large;
+    }
+
+    .credits p{
+        font-size: small;
+    }
+    
+    .logo{
+        width: 100px;
+    }
+    
+    .header{
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .credits{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        border: #69197c 4px solid;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #69197c;
+        color: #2add5d;
+        font-family: "CurioBold";
+    }
+    
+    .coloroverflow{
+        background-image: linear-gradient(#2add5d, #69197c);
+        padding: 10px;
+      }
+    
+    .coloroverflowreverse{
+        background-image: linear-gradient(#69197c, #2add5d);
+        padding: 10px;
+    }
+    
+    footer{
+        background-color: #2add5d;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px;
+        font-size: x-large;
+    }
+    
+    main{
+        background-color: #69197c;
+    }
+    
+    .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 10px 10px;
+        width: 60%;
+        margin: 0 auto;
+        color: #2add5d;
+    }
+    
+    .img{
+        border: #2add5d 5px solid;
+        border-radius: 20px;
+        width: 300px; /* 600 */
+        margin: 5px;
+    }
+    
+    p{
+        font-size: x-large;
+    }
+    
+    .vakken p{
+        font-size: large;
+        margin: 10px;
+    }
+    
+    .vakken p span{
+        text-decoration: underline;
+    }
+    
+    .vakken, .blokken{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .blokken p{
+        margin-left: 10px;
+    }
+    
+    .blokken img{
+        width: 300px; /*700 */
+    
+    }
+    
+    .rooster img{
+        width: 98%;
+        margin: 20px 0px;
+    }
+    
+    .smoelenboek{
+        margin: 10px 0px;
+        display: grid;
+        grid-gap: 1%;
+        grid-template-columns: 100%;
+        grid-auto-flow: dense;
+        margin-bottom: 150px;
+    }
+    
+    .docent{
+        margin: 10px;
+        border: #2add5d 5px solid;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #2add5d;
+        color: #69197c;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform .2s;
+    }
+    
+    .docent img{
+        border: #69197c 5px solid;
+        border-radius: 20px;
+    }
+    
+    .docent:hover{
+        transform: scale(1.1);
+    }
 }
